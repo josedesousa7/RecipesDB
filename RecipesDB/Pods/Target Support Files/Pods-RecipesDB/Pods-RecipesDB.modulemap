@@ -1,0 +1,6 @@
+module Pods_RecipesDB {
+  umbrella header "Pods-RecipesDB-umbrella.h"
+
+  export *
+  module * { export * }
+}

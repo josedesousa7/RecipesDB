@@ -1,0 +1,6 @@
+module Pods_RecipesDB_RecipesDBUITests {
+  umbrella header "Pods-RecipesDB-RecipesDBUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
