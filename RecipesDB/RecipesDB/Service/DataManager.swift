@@ -14,7 +14,7 @@ import RxSwift
 class DataManager {
     let apiKey = "1"
     let mealsList: BehaviorRelay <[Meal]> = BehaviorRelay(value:[])
-    let detailedMeal: BehaviorRelay <DetailedMeal?> = BehaviorRelay(value: nil)
+    let detailedMeal: BehaviorRelay <[DetailedMeal]> = BehaviorRelay(value: [])
 
     func requestMeals(withMainIngredient ingredient:String?) {
         var mainIngredient = String()
@@ -26,11 +26,11 @@ class DataManager {
         AF.request(requestURL).responseJSON{ response in
             switch response.result {
             case .success(let json):
-                print(json)
                 let decoder = JSONDecoder()
                 guard let data = response.data else {return}
                 do {
                     let searchResults = try decoder.decode(MealsSearchResults.self, from: data)
+                    print(searchResults)
                     self.mealsList.accept(searchResults.meals)
 
                 } catch let error {
@@ -39,36 +39,29 @@ class DataManager {
             case .failure(let error):
                 print("Error:\(error.localizedDescription)")
             }
-
         }
-//        Alamofire.request(requestURL).responseJSON{ response in
-//            switch response.result{
-//
-//            case .success(let JSON):
-//                let decoder = JSONDecoder()
-//                guard let data = response.data else {return}
-//                let initialMovieCount = self.moviesList.value.count
-//                do {
-//                    print("Got it, JSON:\(JSON)")
-//                    let searchResults = try decoder.decode(SearchResults.self, from: data)
-//                    print("Got Movie")
-//                    let newValue = self.moviesList.value + searchResults.Search
-//                    self.moviesList.accept(newValue)
-//                } catch let error {
-//                    print(error.localizedDescription)
-//                }
-//
-//                if (self.moviesList.value.count == initialMovieCount && page == 1){
-//                    do {
-//                        let requestError = try decoder.decode(RequestError.self, from: data)
-//                        self.moviesListRequestError.accept(requestError)
-//                    } catch let error {
-//                        print(error.localizedDescription)
-//                    }
-//                }
-//            case .failure(let error):
-//                print("Error:\(error.localizedDescription)")
-//            }
-//        }
+    }
+
+    func requestDetail(forMeal meal: Meal) {
+
+        let requestURL = "https://www.themealdb.com/api/json/v1/\(apiKey)/lookup.php?i=\(meal.idMeal)"
+               AF.request(requestURL).responseJSON{ response in
+                   switch response.result {
+                   case .success(let json):
+                       let decoder = JSONDecoder()
+                       guard let data = response.data else {return}
+                       do {
+                           let searchResults = try decoder.decode(DetailedMealResult.self, from: data)
+                           print(searchResults)
+                           self.detailedMeal.accept(searchResults.meals)
+
+                       } catch let error {
+                           print(error.localizedDescription)
+                       }
+                   case .failure(let error):
+                       print("Error:\(error.localizedDescription)")
+                   }
+               }
+
     }
 }

@@ -34,12 +34,14 @@ class RecipesDBTests: XCTestCase {
                     let searchResults = try decoder.decode(MealsSearchResults.self, from: data)
                     self.resultList = searchResults.meals
                     expectation.fulfill()
-                    print(searchResults)
+                  //  print(searchResults)
 
                 } catch let error {
+                    XCTFail(error.localizedDescription)
                     print(error.localizedDescription)
                 }
             case .failure(let error):
+                XCTFail(error.localizedDescription)
                 print("Error:\(error.localizedDescription)")
             }
         }
@@ -64,9 +66,11 @@ class RecipesDBTests: XCTestCase {
                     print(mealSearched)
 
                 } catch let error {
+                    XCTFail(error.localizedDescription)
                     print(error.localizedDescription)
                 }
             case .failure(let error):
+                XCTFail(error.localizedDescription)
                 print("Error:\(error.localizedDescription)")
             }
         }
