@@ -32,7 +32,7 @@ class DataManager:DataManagerProtocol {
         let requestURL = "https://www.themealdb.com/api/json/v1/\(apiKey)/filter.php?i=\(mainIngredient)"
         AF.request(requestURL).responseJSON{ response in
             switch response.result {
-            case .success(let json):
+            case .success:
                 let decoder = JSONDecoder()
                 guard let data = response.data else {return}
                 do {
@@ -56,15 +56,15 @@ class DataManager:DataManagerProtocol {
     }
 
     func requestDetail(forMeal meal: Meal, _ completion: @escaping (Result<Bool, Error>) -> Void) {
+        resetDetail()
         let requestURL = "https://www.themealdb.com/api/json/v1/\(apiKey)/lookup.php?i=\(meal.idMeal)"
         AF.request(requestURL).responseJSON{ response in
             switch response.result {
-            case .success(let json):
+            case .success:
                 let decoder = JSONDecoder()
                 guard let data = response.data else {return}
                 do {
                     let searchResults = try decoder.decode(DetailedMealResult.self, from: data)
-                    print(searchResults)
                     self.detailedMeal.accept(searchResults.meals)
                     completion(.success(true))
 
@@ -82,6 +82,10 @@ class DataManager:DataManagerProtocol {
 
     func resetMealList() {
          mealsList.accept([])
-         detailedMeal.accept([])
+        resetDetail()
      }
+
+    func resetDetail() {
+    detailedMeal.accept([])
+    }
 }

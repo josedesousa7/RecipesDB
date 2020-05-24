@@ -70,7 +70,18 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("selected")
+        guard let meal = viewModel?.mealsList[indexPath.row] else { return  }
+        viewModel?.requestMealDetailsFor(meal: meal,{[weak self] (result) in
+            guard let self = self else { return }
+            switch result {
+            case .success(let data):
+                print(data.first)
+                break
+            case .failure(let error):
+                print(error.localizedDescription)
+                break
+            }
+        })
     }
 
  }
