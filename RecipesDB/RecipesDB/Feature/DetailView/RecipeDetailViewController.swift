@@ -11,7 +11,7 @@ import UIKit
 class RecipeDetailViewController: UIViewController {
 
 
-    let recipe : DetailedMeal? = nil
+    var recipe : DetailedMeal?
 
 
     @IBOutlet weak var recipePhotoImageView: UIImageView!
@@ -63,10 +63,19 @@ class RecipeDetailViewController: UIViewController {
     @IBOutlet weak var quantity19Label: UILabel!
     @IBOutlet weak var quantity20Label: UILabel!
 
+    @IBOutlet weak var instrunctionsLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let recipe = recipe {
+            setupViewFor(recipe: recipe)
+        }
     }
 
     func setupViewFor(recipe:DetailedMeal) {
@@ -74,6 +83,7 @@ class RecipeDetailViewController: UIViewController {
         recipeNameLabel.text = recipe.strMeal
         recipeAreaLabel.text = recipe.strArea
         recipeCategoryLabel.text = recipe.strCategory
+        instrunctionsLabel.text = recipe.strInstructions
 
         if let ingredient1 = recipe.strIngredient1 {
             ingredient1Label.text = ingredient1

@@ -10,6 +10,7 @@ import UIKit
 class SearchViewController: UIViewController {
 
     var viewModel: SearchViewModel?
+    var detailedRecipe: DetailedMeal?
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -55,7 +56,7 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
         if itemsCont > 20 {
             return 20
         } else {
-        return itemsCont
+            return itemsCont
         }
     }
 
@@ -74,8 +75,9 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
             guard let self = self else { return }
             switch result {
             case .success(let data):
-                print(data.first)
-                self.presentDetailsVC()
+                if let recipe = data.first {
+                    self.presentDetailsVCFor(recipe: recipe)
+                }
                 break
             case .failure(let error):
                 print(error.localizedDescription)
@@ -83,17 +85,19 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
             }
         })
     }
- }
+}
 
 extension SearchViewController {
-    func presentDetailsVC(){
-          self.performSegue(withIdentifier: "detailViewControllerSegue", sender: self)
-      }
+    func presentDetailsVCFor(recipe: DetailedMeal){
+        detailedRecipe = recipe
+        self.performSegue(withIdentifier: "detailViewControllerSegue", sender: self)
+    }
 
-      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-          if(segue.identifier == "detailViewControllerSegue"){
-              guard let destinationVc = segue.destination as? RecipeDetailViewController else {return}
-          }
-      }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "detailViewControllerSegue"){
+            guard let destinationVc = segue.destination as? RecipeDetailViewController else {return}
+            destinationVc.recipe = detailedRecipe
+        }
+    }
 }
 
