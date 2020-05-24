@@ -34,8 +34,7 @@ extension SearchViewController: UISearchBarDelegate {
         viewModel?.requestAvailableMealsForIngredient(ingredient: integredientToSearch, {[weak self] (result) in
             guard let self = self else { return }
             switch result {
-            case .success(let data):
-                print(data)
+            case .success:
                 self.collectionView.reloadData()
                 self.view.endEditing(true)
                 break
@@ -66,7 +65,7 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
             return SearchResultsCollectionViewCell()
         }
         let meal = viewModel?.mealsList[indexPath.row]
-        cell.nameLabel.text = meal?.strMeal
+        cell.configureCellFor(recipe: meal)
         return cell
     }
 
