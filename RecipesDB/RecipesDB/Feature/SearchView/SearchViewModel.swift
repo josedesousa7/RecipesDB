@@ -24,7 +24,7 @@ class SearchViewModel {
         dataManagerService.requestMeals(withMainIngredient: formattedString(text: ingredient)){ [weak self] (result) in
             guard let self = self else { return }
             switch result {
-            case .success(let success):
+            case .success:
                 self.dataManagerService.mealsList.asObservable().subscribe(onNext: {
                     meals in
                     if meals.count > 0 {
@@ -46,7 +46,7 @@ class SearchViewModel {
         dataManagerService.requestDetail(forMeal: meal){[weak self] (result) in
             guard let self = self else { return }
             switch result {
-            case .success(let success):
+            case .success:
                 self.dataManagerService.detailedMeal.asObservable().subscribe(onNext: {
                     detailedMeals in
                     if detailedMeals.count > 0 {
