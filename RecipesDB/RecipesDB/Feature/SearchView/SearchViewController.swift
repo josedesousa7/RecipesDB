@@ -21,7 +21,6 @@ class SearchViewController: UIViewController {
         let service = DataManager()
         viewModel = SearchViewModel(service: service)
         self.searchBar.delegate = self
-        // Do any additional setup after loading the view.
     }
 }
 
@@ -76,6 +75,7 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
             switch result {
             case .success(let data):
                 print(data.first)
+                self.presentDetailsVC()
                 break
             case .failure(let error):
                 print(error.localizedDescription)
@@ -83,6 +83,17 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
             }
         })
     }
-
  }
+
+extension SearchViewController {
+    func presentDetailsVC(){
+          self.performSegue(withIdentifier: "detailViewControllerSegue", sender: self)
+      }
+
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+          if(segue.identifier == "detailViewControllerSegue"){
+              guard let destinationVc = segue.destination as? RecipeDetailViewController else {return}
+          }
+      }
+}
 

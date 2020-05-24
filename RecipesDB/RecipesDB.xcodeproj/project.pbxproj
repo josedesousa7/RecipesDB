@@ -14,6 +14,7 @@
 		5AB5FCAB247AC7C300B09726 /* SearchResultsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5FCA9247AC7C300B09726 /* SearchResultsCollectionViewCell.swift */; };
 		5AB5FCAF247ACF7600B09726 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5FCAE247ACF7600B09726 /* Utils.swift */; };
 		5AB5FCB1247ADB1300B09726 /* ImageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5FCB0247ADB1300B09726 /* ImageDataManager.swift */; };
+		5AB5FCB4247AF32F00B09726 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5FCB3247AF32E00B09726 /* RecipeDetailViewController.swift */; };
 		5ABDF3872478278F0077A391 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABDF3862478278F0077A391 /* DataManager.swift */; };
 		5AFC1B4A2477FC8200670151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC1B492477FC8200670151 /* AppDelegate.swift */; };
 		5AFC1B4C2477FC8200670151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC1B4B2477FC8200670151 /* SceneDelegate.swift */; };
@@ -58,6 +59,7 @@
 		5AB5FCA9247AC7C300B09726 /* SearchResultsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsCollectionViewCell.swift; sourceTree = "<group>"; };
 		5AB5FCAE247ACF7600B09726 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5AB5FCB0247ADB1300B09726 /* ImageDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataManager.swift; sourceTree = "<group>"; };
+		5AB5FCB3247AF32E00B09726 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		5ABDF3862478278F0077A391 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5AFC1B462477FC8200670151 /* RecipesDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipesDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFC1B492477FC8200670151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		5AAC6A7F247A705900DCE4D7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				5AB5FCB2247AF2B700B09726 /* DetailView */,
 				5AAC6A82247A708D00DCE4D7 /* SearchView */,
 			);
 			path = Feature;
@@ -163,6 +166,14 @@
 				5AB5FCAE247ACF7600B09726 /* Utils.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		5AB5FCB2247AF2B700B09726 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				5AB5FCB3247AF32E00B09726 /* RecipeDetailViewController.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 		5ABDF384247826200077A391 /* Model */ = {
@@ -470,6 +481,7 @@
 			files = (
 				5A7D64D9247A887B00F1D093 /* RecipiesDBErrorMessages.swift in Sources */,
 				5AFC1B81247810FD00670151 /* DetailedMeal.swift in Sources */,
+				5AB5FCB4247AF32F00B09726 /* RecipeDetailViewController.swift in Sources */,
 				5ABDF3872478278F0077A391 /* DataManager.swift in Sources */,
 				5AFC1B7F247810E700670151 /* Meal.swift in Sources */,
 				5AFC1B4E2477FC8200670151 /* SearchViewController.swift in Sources */,

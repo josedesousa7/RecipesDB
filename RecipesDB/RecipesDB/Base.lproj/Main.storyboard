@@ -81,6 +81,7 @@
                     <connections>
                         <outlet property="collectionView" destination="vuh-51-q4G" id="cSu-yC-gff"/>
                         <outlet property="searchBar" destination="3DB-RS-lUW" id="I5C-L6-unb"/>
+                        <segue destination="Sj8-Vm-Xlr" kind="show" identifier="detailViewControllerSegue" id="kXB-id-xyO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -104,6 +105,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZb-DY-aVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="331.8840579710145" y="120.53571428571428"/>
+        </scene>
+        <!--Recipe Detail View Controller-->
+        <scene sceneID="K4B-3a-OZc">
+            <objects>
+                <viewController id="Sj8-Vm-Xlr" customClass="RecipeDetailViewController" customModule="RecipesDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FYX-cI-lIx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q7M-Vx-UCx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogc-bV-4Wy">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ogc-bV-4Wy" secondAttribute="trailing" id="1XQ-Gw-ajN"/>
+                                    <constraint firstItem="ogc-bV-4Wy" firstAttribute="top" secondItem="Q7M-Vx-UCx" secondAttribute="top" id="YgI-pD-KbY"/>
+                                    <constraint firstAttribute="bottom" secondItem="ogc-bV-4Wy" secondAttribute="bottom" id="b2d-3C-bYt"/>
+                                    <constraint firstItem="ogc-bV-4Wy" firstAttribute="leading" secondItem="Q7M-Vx-UCx" secondAttribute="leading" id="bb0-EF-GC1"/>
+                                    <constraint firstItem="ogc-bV-4Wy" firstAttribute="height" secondItem="Q7M-Vx-UCx" secondAttribute="height" id="h67-iC-Qyx"/>
+                                    <constraint firstItem="ogc-bV-4Wy" firstAttribute="width" secondItem="Q7M-Vx-UCx" secondAttribute="width" id="x8o-eu-1IJ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="NVd-Mm-QhV"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="kdU-1l-MWc"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Q7M-Vx-UCx" firstAttribute="bottom" secondItem="xKE-bo-Nol" secondAttribute="bottom" id="Lpu-ic-ufW"/>
+                            <constraint firstItem="Q7M-Vx-UCx" firstAttribute="top" secondItem="xKE-bo-Nol" secondAttribute="top" id="eHG-BT-xJt"/>
+                            <constraint firstItem="Q7M-Vx-UCx" firstAttribute="leading" secondItem="xKE-bo-Nol" secondAttribute="leading" id="q58-ro-Ch1"/>
+                            <constraint firstItem="xKE-bo-Nol" firstAttribute="trailing" secondItem="Q7M-Vx-UCx" secondAttribute="trailing" id="r85-zf-Dct"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xKE-bo-Nol"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aUy-IW-Zxr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEn-7q-o9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2073.913043478261" y="120.53571428571428"/>
         </scene>
     </scenes>
     <resources>
