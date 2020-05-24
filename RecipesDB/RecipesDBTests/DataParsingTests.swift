@@ -1,5 +1,5 @@
 //
-//  RecipesDBTests.swift
+//  DataParsingTests.swift
 //  RecipesDBTests
 //
 //  Created by José Marques on 22/05/2020.
@@ -11,7 +11,7 @@ import Alamofire
 
 @testable import RecipesDB
 
-class RecipesDBTests: XCTestCase {
+class DataParsingTests: XCTestCase {
 
 
     var resultList = [Meal]()
@@ -22,8 +22,8 @@ class RecipesDBTests: XCTestCase {
     override func tearDownWithError() throws {
     }
 
-    func testMealListParsing() {
-        let requestURL = "https://www.themealdb.com/api/json/v1/1/filter.php?i=beef"
+    func testMealListParsing() throws {
+        let requestURL = "https://www.themealdb.com/api/json/v1/1/filter.php?i=shrimp"
         let expectation = self.expectation(description: "Parsing")
         AF.request(requestURL).responseJSON{ response in
             switch response.result {
@@ -32,16 +32,22 @@ class RecipesDBTests: XCTestCase {
                 guard let data = response.data else {return}
                 do {
                     let searchResults = try decoder.decode(MealsSearchResults.self, from: data)
-                    self.resultList = searchResults.meals
-                    expectation.fulfill()
-                  //  print(searchResults)
-
+                    if let availableRecipes = searchResults.meals {
+                         self.resultList = availableRecipes
+                        expectation.fulfill()
+                        print(availableRecipes)
+                    }
+                    else {
+                        expectation.fulfill()
+                        XCTFail(TestErrors.parsingError.localizedDescription)
+                    }
                 } catch let error {
                     XCTFail(error.localizedDescription)
                     print(error.localizedDescription)
                 }
             case .failure(let error):
                 XCTFail(error.localizedDescription)
+                expectation.fulfill()
                 print("Error:\(error.localizedDescription)")
             }
         }

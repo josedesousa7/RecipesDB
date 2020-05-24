@@ -11,7 +11,13 @@ import Alamofire
 import RxCocoa
 import RxSwift
 
-class DataManager {
+protocol DataManagerProtocol {
+     func requestMeals(withMainIngredient ingredient:String?)
+     func requestDetail(forMeal meal: Meal)
+}
+
+
+class DataManager:DataManagerProtocol {
     let apiKey = "1"
     let mealsList: BehaviorRelay <[Meal]> = BehaviorRelay(value:[])
     let detailedMeal: BehaviorRelay <[DetailedMeal]> = BehaviorRelay(value: [])
@@ -30,9 +36,9 @@ class DataManager {
                 guard let data = response.data else {return}
                 do {
                     let searchResults = try decoder.decode(MealsSearchResults.self, from: data)
-                    print(searchResults)
-                    self.mealsList.accept(searchResults.meals)
-
+                    if let availableRecipes = searchResults.meals {
+                        self.mealsList.accept(availableRecipes)
+                    }
                 } catch let error {
                     print(error.localizedDescription)
                 }
