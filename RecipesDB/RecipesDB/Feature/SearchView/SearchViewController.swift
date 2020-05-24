@@ -12,9 +12,12 @@ class SearchViewController: UIViewController {
     var viewModel: SearchViewModel?
 
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.dataSource = self
+        collectionView.delegate = self
         let service = DataManager()
         viewModel = SearchViewModel(service: service)
         self.searchBar.delegate = self
@@ -33,9 +36,11 @@ extension SearchViewController: UISearchBarDelegate {
             switch result {
             case .success(let data):
                 print(data)
+                self.collectionView.reloadData()
                 self.view.endEditing(true)
                 break
             case .failure(let error):
+                self.collectionView.reloadData()
                 self.view.endEditing(true)
                 print(error.localizedDescription)
                 break
@@ -43,4 +48,29 @@ extension SearchViewController: UISearchBarDelegate {
         })
     }
 }
+
+extension SearchViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let itemsCont = viewModel?.mealsList.count else {
+            return 0
+        }
+        if itemsCont > 20 {
+            return 20
+        } else {
+        return itemsCont
+        }
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Utils.cellIdentifiers.searchResultCell.rawValue, for: indexPath) as? SearchResultsCollectionViewCell else {
+               return SearchResultsCollectionViewCell()
+           }
+           return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("selected")
+    }
+
+ }
 

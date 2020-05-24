@@ -36,7 +36,8 @@ class SearchViewModel {
                 }).dispose()
                 break
             case .failure(let error):
-                print(error.localizedDescription)
+                 self.mealsList = []
+                completion(.failure(error))
                 break
             }
         }
