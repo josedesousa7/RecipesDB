@@ -25,6 +25,7 @@ class DataManager:DataManagerProtocol {
     func requestMeals(withMainIngredient ingredient:String?, _ completion: @escaping (Result<Bool, Error>) -> Void) {
         var mainIngredient = String()
         if let ingredientToSearch = ingredient {
+            resetMealList()
             mainIngredient = ingredientToSearch
         }
 
