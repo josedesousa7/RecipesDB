@@ -56,11 +56,6 @@ class SearchViewModel {
         }
     }
 
-
-    func resetObservers() {
-        dataManagerService.resetMealList()
-    }
-
     func formattedString(text: String) -> String {
         var formattedString = text.trimmingCharacters(in: .whitespacesAndNewlines)
         formattedString = formattedString.replacingOccurrences(of: " ", with: "_")

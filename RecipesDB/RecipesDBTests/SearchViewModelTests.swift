@@ -117,4 +117,11 @@ class SearchViewModelTests: XCTestCase {
         XCTAssertNotEqual(retrievedRecipe.first?.strMeal, "Beef and Mustard Pie")
         XCTAssertNotEqual(retrievedRecipe.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
     }
+
+    func testStringFormat () {
+        let testString = "Chicken Breast"
+        let expectedResult = "Chicken_Breast"
+        let result = viewModel?.formattedString(text: testString)
+        XCTAssertEqual(result, expectedResult)
+    }
 }
