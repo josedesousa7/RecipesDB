@@ -41,7 +41,7 @@ extension SearchViewController: UISearchBarDelegate {
             case .failure(let error):
                 self.collectionView.reloadData()
                 self.view.endEditing(true)
-                print(error.localizedDescription)
+                self.presentAlertController(withTitle: "Oops!", andMessage: error.localizedDescription)
                 break
             }
         })
@@ -80,7 +80,7 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
                 }
                 break
             case .failure(let error):
-                print(error.localizedDescription)
+                self.presentAlertController(withTitle: "Oops!", andMessage: error.localizedDescription)
                 break
             }
         })

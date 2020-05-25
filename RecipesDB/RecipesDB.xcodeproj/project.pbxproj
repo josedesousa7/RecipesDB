@@ -12,6 +12,7 @@
 		5A21114C247BBC8900B9A43D /* String + Formatts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21114B247BBC8900B9A43D /* String + Formatts.swift */; };
 		5A7D64D6247A7AF600F1D093 /* TestErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D64D5247A7AF500F1D093 /* TestErrors.swift */; };
 		5A7D64D9247A887B00F1D093 /* RecipiesDBErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D64D8247A887B00F1D093 /* RecipiesDBErrorMessages.swift */; };
+		5A9FBA74247BC7A80040B6BC /* UIViewController + AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FBA73247BC7A80040B6BC /* UIViewController + AlertController.swift */; };
 		5AAC6A84247A710400DCE4D7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC6A83247A710400DCE4D7 /* SearchViewModel.swift */; };
 		5AB5FCAB247AC7C300B09726 /* SearchResultsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5FCA9247AC7C300B09726 /* SearchResultsCollectionViewCell.swift */; };
 		5AB5FCAF247ACF7600B09726 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5FCAE247ACF7600B09726 /* Utils.swift */; };
@@ -59,6 +60,7 @@
 		5A21114B247BBC8900B9A43D /* String + Formatts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Formatts.swift"; sourceTree = "<group>"; };
 		5A7D64D5247A7AF500F1D093 /* TestErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestErrors.swift; sourceTree = "<group>"; };
 		5A7D64D8247A887B00F1D093 /* RecipiesDBErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesDBErrorMessages.swift; sourceTree = "<group>"; };
+		5A9FBA73247BC7A80040B6BC /* UIViewController + AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + AlertController.swift"; sourceTree = "<group>"; };
 		5AAC6A83247A710400DCE4D7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		5AB5FCA9247AC7C300B09726 /* SearchResultsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsCollectionViewCell.swift; sourceTree = "<group>"; };
 		5AB5FCAE247ACF7600B09726 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				5A21114B247BBC8900B9A43D /* String + Formatts.swift */,
+				5A9FBA73247BC7A80040B6BC /* UIViewController + AlertController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 			files = (
 				5A7D64D9247A887B00F1D093 /* RecipiesDBErrorMessages.swift in Sources */,
 				5AFC1B81247810FD00670151 /* DetailedMeal.swift in Sources */,
+				5A9FBA74247BC7A80040B6BC /* UIViewController + AlertController.swift in Sources */,
 				5AB5FCB4247AF32F00B09726 /* RecipeDetailViewController.swift in Sources */,
 				5ABDF3872478278F0077A391 /* DataManager.swift in Sources */,
 				5A21114C247BBC8900B9A43D /* String + Formatts.swift in Sources */,
