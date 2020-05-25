@@ -95,6 +95,29 @@ class SearchViewModelTests: XCTestCase {
         XCTAssertNotEqual(retrievedAvailableRecipesList.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
     }
 
+    func testViewModelRetrieveRecipesListWithEmptyTitleFails(){
+        let expectation = self.expectation(description: "Retrieving")
+        var errorMessage = String()
+        var retrievedAvailableRecipesList = [Meal]()
+        viewModel?.requestAvailableMealsForIngredient(ingredient: "", {(result) in
+            switch result {
+            case .success(let data):
+                retrievedAvailableRecipesList = data
+                expectation.fulfill()
+                break
+            case .failure(let error):
+                errorMessage = error.localizedDescription
+                expectation.fulfill()
+                break
+            }
+        })
+        waitForExpectations(timeout: 20, handler: nil)
+        XCTAssert(retrievedAvailableRecipesList.count == 0)
+        XCTAssertEqual(errorMessage, RecipiesDBErrorMessages.emptySearchCriteria.localizedDescription)
+        XCTAssertNotEqual(retrievedAvailableRecipesList.first?.strMeal, "Beef and Mustard Pie")
+        XCTAssertNotEqual(retrievedAvailableRecipesList.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
+    }
+
     func testViewModelRetrieveRecipeFails() throws {
         var errorMessage = String()
         var retrievedRecipe = [DetailedMeal]()
