@@ -9,9 +9,13 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+// MARK: Variables
+
     var viewModel: SearchViewModel?
     var detailedRecipe: DetailedMeal?
 
+// MARK: UIElements
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -25,28 +29,32 @@ class SearchViewController: UIViewController {
     }
 }
 
+// MARK: SearchBar Delegate
+
 extension SearchViewController: UISearchBarDelegate {
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let integredientToSearch = searchBar.text else {
             return
         }
-        viewModel?.requestAvailableMealsForIngredient(ingredient: integredientToSearch, {[weak self] (result) in
-            guard let self = self else { return }
-            switch result {
-            case .success:
-                self.collectionView.reloadData()
-                self.view.endEditing(true)
-                break
-            case .failure(let error):
-                self.collectionView.reloadData()
-                self.view.endEditing(true)
-                self.presentAlertController(withTitle: "Oops!", andMessage: error.localizedDescription)
-                break
-            }
-        })
-    }
+            viewModel?.requestAvailableMealsForIngredient(ingredient: integredientToSearch, {[weak self] (result) in
+                guard let self = self else { return }
+                switch result {
+                case .success:
+                    self.collectionView.reloadData()
+                    self.view.endEditing(true)
+                    break
+                case .failure(let error):
+                    self.collectionView.reloadData()
+                    self.view.endEditing(true)
+                    self.presentAlertController(withTitle: "Oops!", andMessage: error.localizedDescription)
+                    break
+                }
+            })
+        }
 }
+
+// MARK: CollectionView DataSource and Delegate
 
 extension SearchViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -86,6 +94,8 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
         })
     }
 }
+
+// MARK: Navigation
 
 extension SearchViewController {
     func presentDetailsVCFor(recipe: DetailedMeal){

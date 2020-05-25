@@ -9,14 +9,17 @@
 import Foundation
 
 enum RecipiesDBErrorMessages: Error {
-    case emptySearch
+    case emptySearchResponse
+    case emptySearchCriteria
 }
 
 extension RecipiesDBErrorMessages: LocalizedError {
     public var errorDescription: String? {
         switch self {
-        case .emptySearch:
+        case .emptySearchResponse:
             return "Couldn't find any recipe for that ingredient!"
+        case .emptySearchCriteria:
+            return "Search criteria can't be empty"
         }
     }
 }

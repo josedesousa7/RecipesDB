@@ -22,6 +22,14 @@ class DataManager:DataManagerProtocol {
     let mealsList: BehaviorRelay <[Meal]> = BehaviorRelay(value:[])
     let detailedMeal: BehaviorRelay <[DetailedMeal]> = BehaviorRelay(value: [])
 
+    //MARK: Network requests
+
+    /**
+     Request a list of recipes for a given main ingredient
+     - Parameter withMainIngredient: The main ingredient to be searched for
+     - Parameter completion: Callback with the result. A Boolean in case of success or an error.
+     */
+
     func requestMeals(withMainIngredient ingredient:String?, _ completion: @escaping (Result<Bool, Error>) -> Void) {
         var mainIngredient = String()
         if let ingredientToSearch = ingredient {
@@ -50,10 +58,16 @@ class DataManager:DataManagerProtocol {
                 print("Error:\(error.localizedDescription)")
             }
             if self.mealsList.value.count <= 0 {
-                completion(.failure(RecipiesDBErrorMessages.emptySearch))
+                completion(.failure(RecipiesDBErrorMessages.emptySearchResponse))
             }
         }
     }
+
+    /**
+     Request a list of detailed recipes
+     - Parameter forMeal: The recipe to be searched for
+     - Parameter completion: Callback with the result. A Boolean in case of success or an error.
+     */
 
     func requestDetail(forMeal meal: Meal, _ completion: @escaping (Result<Bool, Error>) -> Void) {
         resetDetail()
@@ -75,17 +89,23 @@ class DataManager:DataManagerProtocol {
                 print("Error:\(error.localizedDescription)")
             }
             if self.detailedMeal.value.count <= 0 {
-                completion(.failure(RecipiesDBErrorMessages.emptySearch))
+                completion(.failure(RecipiesDBErrorMessages.emptySearchResponse))
             }
         }
     }
 
+    /**
+     Reset the recipe's list
+     */
     func resetMealList() {
-         mealsList.accept([])
+        mealsList.accept([])
         resetDetail()
-     }
-
+    }
+    
+    /**
+     Reset the detailed recipe's list
+     */
     func resetDetail() {
-    detailedMeal.accept([])
+        detailedMeal.accept([])
     }
 }
