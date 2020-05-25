@@ -14,4 +14,8 @@ struct Utils {
         case searchResultCell = "searchResultsCell"
     }
 
+    enum SeguesIdentifiers: String {
+        case recipeDetailSegue = "detailViewControllerSegue"
+    }
+
 }

@@ -90,11 +90,11 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
 extension SearchViewController {
     func presentDetailsVCFor(recipe: DetailedMeal){
         detailedRecipe = recipe
-        self.performSegue(withIdentifier: "detailViewControllerSegue", sender: self)
+        self.performSegue(withIdentifier: Utils.SeguesIdentifiers.recipeDetailSegue.rawValue, sender: self)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "detailViewControllerSegue"){
+        if(segue.identifier == Utils.SeguesIdentifiers.recipeDetailSegue.rawValue){
             guard let destinationVc = segue.destination as? RecipeDetailViewController else {return}
             destinationVc.recipe = detailedRecipe
         }

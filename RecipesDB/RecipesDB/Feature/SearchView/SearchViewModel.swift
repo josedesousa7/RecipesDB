@@ -27,12 +27,8 @@ class SearchViewModel {
             case .success:
                 self.dataManagerService.mealsList.asObservable().subscribe(onNext: {
                     meals in
-                    if meals.count > 0 {
-                        self.mealsList = meals
-                        completion(.success(meals))
-                    } else {
-                        completion(.failure(RecipiesDBErrorMessages.emptySearch))
-                    }
+                     completion(.success(meals))
+                     self.mealsList = meals
                 }).dispose()
                 break
             case .failure(let error):
@@ -50,19 +46,16 @@ class SearchViewModel {
             case .success:
                 self.dataManagerService.detailedMeal.asObservable().subscribe(onNext: {
                     detailedMeals in
-                    if detailedMeals.count > 0 {
-                        completion(.success(detailedMeals))
-                    } else {
-                        completion(.failure(RecipiesDBErrorMessages.emptySearch))
-                    }
+                     completion(.success(detailedMeals))
                 }).dispose()
                 break
             case .failure(let error):
-                print(error.localizedDescription)
+                completion(.failure(error))
                 break
             }
         }
     }
+
 
     func resetObservers() {
         dataManagerService.resetMealList()

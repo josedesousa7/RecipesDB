@@ -9,17 +9,17 @@
 import UIKit
 
 class RecipeDetailViewController: UIViewController {
-
+    
 
     var recipe : DetailedMeal?
-
-
+    var viewModel: RecipeDetailViewModel?
+    
     @IBOutlet weak var recipePhotoImageView: UIImageView!
     @IBOutlet weak var recipeNameLabel: UILabel!
     @IBOutlet weak var tagsLabel: UILabel!
     @IBOutlet weak var recipeCategoryLabel: UILabel!
     @IBOutlet weak var recipeAreaLabel: UILabel!
-
+    
     @IBOutlet weak var ingredient1Label: UILabel!
     @IBOutlet weak var ingredient2Label: UILabel!
     @IBOutlet weak var ingredient3Label: UILabel!
@@ -40,8 +40,8 @@ class RecipeDetailViewController: UIViewController {
     @IBOutlet weak var ingredient18Label: UILabel!
     @IBOutlet weak var ingredient19Label: UILabel!
     @IBOutlet weak var ingredient20Label: UILabel!
-
-
+    
+    
     @IBOutlet weak var quantity1Label: UILabel!
     @IBOutlet weak var quantity2Label: UILabel!
     @IBOutlet weak var quantity3Label: UILabel!
@@ -62,29 +62,36 @@ class RecipeDetailViewController: UIViewController {
     @IBOutlet weak var quantity18Label: UILabel!
     @IBOutlet weak var quantity19Label: UILabel!
     @IBOutlet weak var quantity20Label: UILabel!
-
+    
     @IBOutlet weak var instrunctionsLabel: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        viewModel = RecipeDetailViewModel()
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let recipe = recipe {
             setupViewFor(recipe: recipe)
         }
+        
+        if let recipe = recipe {
+            viewModel?.fetchImageFor(forDetailedRecipe: recipe, {(image) in
+                self.recipePhotoImageView.image = image
+            })
+        }
     }
-
+    
     func setupViewFor(recipe:DetailedMeal) {
-
         recipeNameLabel.text = recipe.strMeal
         recipeAreaLabel.text = recipe.strArea
         recipeCategoryLabel.text = recipe.strCategory
         instrunctionsLabel.text = recipe.strInstructions
-
+        
         if let ingredient1 = recipe.strIngredient1 {
             ingredient1Label.text = ingredient1
         }
@@ -115,7 +122,7 @@ class RecipeDetailViewController: UIViewController {
         if let ingredient10 = recipe.strIngredient10 {
             ingredient10Label.text = ingredient10
         }
-       if let ingredient11 = recipe.strIngredient11 {
+        if let ingredient11 = recipe.strIngredient11 {
             ingredient11Label.text = ingredient11
         }
         if let ingredient12 = recipe.strIngredient12 {
@@ -145,7 +152,6 @@ class RecipeDetailViewController: UIViewController {
         if let ingredient20 = recipe.strIngredient20 {
             ingredient20Label.text = ingredient20
         }
-
         if let quantity1 = recipe.strMeasure1 {
             quantity1Label.text = quantity1
         }
