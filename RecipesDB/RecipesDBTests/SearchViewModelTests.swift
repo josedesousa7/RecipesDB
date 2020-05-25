@@ -14,7 +14,7 @@ class SearchViewModelTests: XCTestCase {
     var viewModel: SearchViewModel?
     var recipesList = [Meal]()
     var recipe: Meal?
-    var recipeSearched = [DetailedMeal]()
+    var retrievedRecipe = [DetailedMeal]()
     var wrongRecipe: Meal?
 
     override func setUpWithError() throws {
@@ -56,7 +56,7 @@ class SearchViewModelTests: XCTestCase {
             guard let self = self else { return }
             switch result {
             case .success(let data):
-                self.recipeSearched = data
+                self.retrievedRecipe = data
                 print(data)
                 expectation.fulfill()
                 break
@@ -67,9 +67,9 @@ class SearchViewModelTests: XCTestCase {
             }
         })
         waitForExpectations(timeout: 20, handler: nil)
-        XCTAssert(recipeSearched.count > 0)
-        XCTAssertEqual(recipeSearched.first?.strMeal, "Beef and Mustard Pie")
-        XCTAssertEqual(recipeSearched.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
+        XCTAssert(retrievedRecipe.count > 0)
+        XCTAssertEqual(retrievedRecipe.first?.strMeal, "Beef and Mustard Pie")
+        XCTAssertEqual(retrievedRecipe.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
     }
 
     func testViewModelRetrieveRecipesListFails(){
