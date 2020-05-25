@@ -50,7 +50,7 @@ class DataManager:DataManagerProtocol {
                 print("Error:\(error.localizedDescription)")
             }
             if self.mealsList.value.count <= 0 {
-                completion(.failure(RecipiesDBErrorMessages.emptySearch))
+                completion(.failure(RecipiesDBErrorMessages.emptySearchResponse))
             }
         }
     }
@@ -75,7 +75,7 @@ class DataManager:DataManagerProtocol {
                 print("Error:\(error.localizedDescription)")
             }
             if self.detailedMeal.value.count <= 0 {
-                completion(.failure(RecipiesDBErrorMessages.emptySearch))
+                completion(.failure(RecipiesDBErrorMessages.emptySearchResponse))
             }
         }
     }

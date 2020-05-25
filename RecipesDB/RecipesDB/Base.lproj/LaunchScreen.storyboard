@@ -16,10 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookbook" translatesAutoresizingMaskIntoConstraints="NO" id="ugg-af-CpJ">
-                                <rect key="frame" x="10" y="44" width="414" height="400"/>
+                                <rect key="frame" x="60" y="94" width="304" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="lee-xU-0XV"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to RecipesDB!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLY-9j-8K5">
-                                <rect key="frame" x="10" y="464" width="394" height="20.5"/>
+                                <rect key="frame" x="10" y="364" width="394" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,12 +30,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ugg-af-CpJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="Dba-g0-q8G"/>
+                            <constraint firstItem="ugg-af-CpJ" firstAttribute="leading" secondItem="lLY-9j-8K5" secondAttribute="leading" constant="50" id="3ex-Q2-paB"/>
+                            <constraint firstItem="ugg-af-CpJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="LXD-Ge-Hkj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lLY-9j-8K5" secondAttribute="trailing" constant="10" id="O0c-s6-pJn"/>
+                            <constraint firstItem="lLY-9j-8K5" firstAttribute="top" secondItem="ugg-af-CpJ" secondAttribute="bottom" constant="20" id="Pfj-3j-eFC"/>
                             <constraint firstItem="lLY-9j-8K5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="SJt-AX-mWu"/>
-                            <constraint firstItem="ugg-af-CpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="WL5-bA-2b7"/>
-                            <constraint firstItem="ugg-af-CpJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lai-5Q-hsC"/>
-                            <constraint firstItem="lLY-9j-8K5" firstAttribute="top" secondItem="ugg-af-CpJ" secondAttribute="bottom" constant="20" id="qAB-zY-OB8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ugg-af-CpJ" secondAttribute="trailing" constant="50" id="oBg-xV-NTb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

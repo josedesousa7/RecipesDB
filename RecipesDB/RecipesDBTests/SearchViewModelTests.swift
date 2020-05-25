@@ -90,7 +90,7 @@ class SearchViewModelTests: XCTestCase {
         })
         waitForExpectations(timeout: 20, handler: nil)
         XCTAssert(retrievedAvailableRecipesList.count == 0)
-        XCTAssertEqual(errorMessage, RecipiesDBErrorMessages.emptySearch.localizedDescription)
+        XCTAssertEqual(errorMessage, RecipiesDBErrorMessages.emptySearchResponse.localizedDescription)
         XCTAssertNotEqual(retrievedAvailableRecipesList.first?.strMeal, "Beef and Mustard Pie")
         XCTAssertNotEqual(retrievedAvailableRecipesList.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
     }
@@ -113,7 +113,7 @@ class SearchViewModelTests: XCTestCase {
         })
         waitForExpectations(timeout: 20, handler: nil)
         XCTAssert(retrievedRecipe.count == 0)
-        XCTAssertEqual(errorMessage, RecipiesDBErrorMessages.emptySearch.localizedDescription)
+        XCTAssertEqual(errorMessage, RecipiesDBErrorMessages.emptySearchResponse.localizedDescription)
         XCTAssertNotEqual(retrievedRecipe.first?.strMeal, "Beef and Mustard Pie")
         XCTAssertNotEqual(retrievedRecipe.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
     }
