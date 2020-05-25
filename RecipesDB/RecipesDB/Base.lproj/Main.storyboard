@@ -141,7 +141,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-DE-eoN">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-DE-eoN">
                                                         <rect key="frame" x="0.0" y="100" width="394" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -500,6 +500,46 @@
                         <outlet property="recipeNameLabel" destination="Uh2-k1-Vp3" id="eIM-yN-j2W"/>
                         <outlet property="recipePhotoImageView" destination="uMo-uV-BhB" id="1CG-2L-i6N"/>
                         <outlet property="tagsLabel" destination="tbC-UD-blQ" id="jSE-mP-Yav"/>
+                        <outletCollection property="recipeLabels" destination="2h1-0n-wf0" collectionClass="NSMutableArray" id="UX8-GP-zmA"/>
+                        <outletCollection property="recipeLabels" destination="Tsb-LU-eAr" collectionClass="NSMutableArray" id="KZP-0S-sw7"/>
+                        <outletCollection property="recipeLabels" destination="fJc-Py-3dW" collectionClass="NSMutableArray" id="eHc-N6-RP5"/>
+                        <outletCollection property="recipeLabels" destination="jCD-2b-gHa" collectionClass="NSMutableArray" id="n9c-gX-2Rq"/>
+                        <outletCollection property="recipeLabels" destination="phv-bT-KKU" collectionClass="NSMutableArray" id="pVr-dR-sXb"/>
+                        <outletCollection property="recipeLabels" destination="5o0-hn-3RY" collectionClass="NSMutableArray" id="Zgd-nR-5Kc"/>
+                        <outletCollection property="recipeLabels" destination="EQV-X2-0of" collectionClass="NSMutableArray" id="f1H-DI-DIL"/>
+                        <outletCollection property="recipeLabels" destination="3rh-uX-XJZ" collectionClass="NSMutableArray" id="CLY-l2-cPS"/>
+                        <outletCollection property="recipeLabels" destination="H1k-sS-cs4" collectionClass="NSMutableArray" id="he4-KN-tqe"/>
+                        <outletCollection property="recipeLabels" destination="TPW-WY-sdq" collectionClass="NSMutableArray" id="0cL-5L-JXg"/>
+                        <outletCollection property="recipeLabels" destination="mFE-FB-5wo" collectionClass="NSMutableArray" id="Yj8-83-LyY"/>
+                        <outletCollection property="recipeLabels" destination="jVf-Yo-0fz" collectionClass="NSMutableArray" id="iwd-ka-Xtx"/>
+                        <outletCollection property="recipeLabels" destination="gAQ-NK-hxd" collectionClass="NSMutableArray" id="3dR-so-dr8"/>
+                        <outletCollection property="recipeLabels" destination="373-sC-mWD" collectionClass="NSMutableArray" id="BLJ-8L-ioh"/>
+                        <outletCollection property="recipeLabels" destination="QSJ-pB-cNq" collectionClass="NSMutableArray" id="X1q-H9-cjt"/>
+                        <outletCollection property="recipeLabels" destination="ajw-Ax-Shh" collectionClass="NSMutableArray" id="NPl-6U-odm"/>
+                        <outletCollection property="recipeLabels" destination="Blw-1g-NGe" collectionClass="NSMutableArray" id="4kT-d1-JNr"/>
+                        <outletCollection property="recipeLabels" destination="Kft-ka-Sfs" collectionClass="NSMutableArray" id="ahG-jJ-nir"/>
+                        <outletCollection property="recipeLabels" destination="Q9q-wN-2re" collectionClass="NSMutableArray" id="hT8-9t-TXg"/>
+                        <outletCollection property="recipeLabels" destination="ofh-EN-R9Y" collectionClass="NSMutableArray" id="kvg-WB-6jR"/>
+                        <outletCollection property="recipeLabels" destination="fyj-nx-077" collectionClass="NSMutableArray" id="fui-0v-DaM"/>
+                        <outletCollection property="recipeLabels" destination="PE1-0Z-5in" collectionClass="NSMutableArray" id="xnn-iB-bQO"/>
+                        <outletCollection property="recipeLabels" destination="Awl-mO-bvP" collectionClass="NSMutableArray" id="XtC-dp-VRf"/>
+                        <outletCollection property="recipeLabels" destination="csj-oO-1t3" collectionClass="NSMutableArray" id="Am2-aT-cKT"/>
+                        <outletCollection property="recipeLabels" destination="Hle-4o-B4N" collectionClass="NSMutableArray" id="BhW-Lb-edf"/>
+                        <outletCollection property="recipeLabels" destination="AAb-gk-R7x" collectionClass="NSMutableArray" id="fZr-Kl-dGt"/>
+                        <outletCollection property="recipeLabels" destination="2VM-5Y-pCE" collectionClass="NSMutableArray" id="Z3D-g0-nh9"/>
+                        <outletCollection property="recipeLabels" destination="kru-z1-zfb" collectionClass="NSMutableArray" id="QRI-Fz-EFf"/>
+                        <outletCollection property="recipeLabels" destination="m64-31-kPP" collectionClass="NSMutableArray" id="2hj-BY-pIO"/>
+                        <outletCollection property="recipeLabels" destination="moN-3x-8mc" collectionClass="NSMutableArray" id="aTS-85-y8U"/>
+                        <outletCollection property="recipeLabels" destination="hLW-MR-COE" collectionClass="NSMutableArray" id="Bq6-Qz-PCU"/>
+                        <outletCollection property="recipeLabels" destination="jDq-pb-AGm" collectionClass="NSMutableArray" id="669-El-OAn"/>
+                        <outletCollection property="recipeLabels" destination="hI6-Tu-UWN" collectionClass="NSMutableArray" id="GAZ-a7-Yu0"/>
+                        <outletCollection property="recipeLabels" destination="39Z-OJ-Ccf" collectionClass="NSMutableArray" id="An7-3Z-Thx"/>
+                        <outletCollection property="recipeLabels" destination="kWe-mM-lG2" collectionClass="NSMutableArray" id="820-pN-ju0"/>
+                        <outletCollection property="recipeLabels" destination="yx6-eq-Kll" collectionClass="NSMutableArray" id="v2L-j6-ssK"/>
+                        <outletCollection property="recipeLabels" destination="ueM-Nb-8wL" collectionClass="NSMutableArray" id="2by-NB-Rko"/>
+                        <outletCollection property="recipeLabels" destination="gAy-Sm-CpH" collectionClass="NSMutableArray" id="I0K-qw-lF5"/>
+                        <outletCollection property="recipeLabels" destination="tSi-td-rSS" collectionClass="NSMutableArray" id="07a-qt-bS2"/>
+                        <outletCollection property="recipeLabels" destination="KWu-MU-l7d" collectionClass="NSMutableArray" id="1th-Rq-3Z7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEn-7q-o9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

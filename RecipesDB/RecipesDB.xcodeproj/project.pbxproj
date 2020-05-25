@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		294C86F6F5433CC52F3BAB07 /* libPods-RecipesDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDCAEDBC128118063A3384B2 /* libPods-RecipesDB.a */; };
 		5A211149247BB57D00B9A43D /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A211148247BB57D00B9A43D /* RecipeDetailViewModel.swift */; };
+		5A21114C247BBC8900B9A43D /* String + Formatts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21114B247BBC8900B9A43D /* String + Formatts.swift */; };
 		5A7D64D6247A7AF600F1D093 /* TestErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D64D5247A7AF500F1D093 /* TestErrors.swift */; };
 		5A7D64D9247A887B00F1D093 /* RecipiesDBErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D64D8247A887B00F1D093 /* RecipiesDBErrorMessages.swift */; };
 		5AAC6A84247A710400DCE4D7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC6A83247A710400DCE4D7 /* SearchViewModel.swift */; };
@@ -55,6 +56,7 @@
 		1EAA6DAFD28BE0A50321B21E /* Pods-RecipesDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipesDBTests.release.xcconfig"; path = "Target Support Files/Pods-RecipesDBTests/Pods-RecipesDBTests.release.xcconfig"; sourceTree = "<group>"; };
 		29B1B6720DDD275BBEA12045 /* Pods-RecipesDB-RecipesDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipesDB-RecipesDBUITests.release.xcconfig"; path = "Target Support Files/Pods-RecipesDB-RecipesDBUITests/Pods-RecipesDB-RecipesDBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5A211148247BB57D00B9A43D /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
+		5A21114B247BBC8900B9A43D /* String + Formatts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Formatts.swift"; sourceTree = "<group>"; };
 		5A7D64D5247A7AF500F1D093 /* TestErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestErrors.swift; sourceTree = "<group>"; };
 		5A7D64D8247A887B00F1D093 /* RecipiesDBErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesDBErrorMessages.swift; sourceTree = "<group>"; };
 		5AAC6A83247A710400DCE4D7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		5A21114A247BBBDF00B9A43D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5A21114B247BBC8900B9A43D /* String + Formatts.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -235,7 +238,7 @@
 				5AB5FCAD247ACF6800B09726 /* Common */,
 				5A7D64D7247A885C00F1D093 /* ErrorMessages */,
 				5ABDF385247826300077A391 /* Application */,
-				5AFC1B7B247810B200670151 /* Service */,
+				5AFC1B7B247810B200670151 /* Services */,
 				5AAC6A7F247A705900DCE4D7 /* Feature */,
 				5AFC1B572477FC8600670151 /* Info.plist */,
 				5AFC1B4F2477FC8200670151 /* Main.storyboard */,
@@ -264,14 +267,14 @@
 			path = RecipesDBUITests;
 			sourceTree = "<group>";
 		};
-		5AFC1B7B247810B200670151 /* Service */ = {
+		5AFC1B7B247810B200670151 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				5ABDF384247826200077A391 /* Model */,
 				5ABDF3862478278F0077A391 /* DataManager.swift */,
 				5AB5FCB0247ADB1300B09726 /* ImageDataManager.swift */,
 			);
-			path = Service;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		7726377F721B68CC4C52A52F /* Pods */ = {
@@ -494,6 +497,7 @@
 				5AFC1B81247810FD00670151 /* DetailedMeal.swift in Sources */,
 				5AB5FCB4247AF32F00B09726 /* RecipeDetailViewController.swift in Sources */,
 				5ABDF3872478278F0077A391 /* DataManager.swift in Sources */,
+				5A21114C247BBC8900B9A43D /* String + Formatts.swift in Sources */,
 				5AFC1B7F247810E700670151 /* Meal.swift in Sources */,
 				5AFC1B4E2477FC8200670151 /* SearchViewController.swift in Sources */,
 				5AFC1B832478187F00670151 /* DetailedMealResult.swift in Sources */,
