@@ -10,6 +10,7 @@ import UIKit
 class SearchViewController: UIViewController {
 
     var viewModel: SearchViewModel?
+    var detailedRecipe: DetailedMeal?
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -21,7 +22,6 @@ class SearchViewController: UIViewController {
         let service = DataManager()
         viewModel = SearchViewModel(service: service)
         self.searchBar.delegate = self
-        // Do any additional setup after loading the view.
     }
 }
 
@@ -50,13 +50,13 @@ extension SearchViewController: UISearchBarDelegate {
 
 extension SearchViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let itemsCont = viewModel?.mealsList.count else {
+        guard let itemsCount = viewModel?.mealsList.count else {
             return 0
         }
-        if itemsCont > 20 {
+        if itemsCount > 20 {
             return 20
         } else {
-        return itemsCont
+            return itemsCount
         }
     }
 
@@ -75,7 +75,9 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
             guard let self = self else { return }
             switch result {
             case .success(let data):
-                print(data.first)
+                if let recipe = data.first {
+                    self.presentDetailsVCFor(recipe: recipe)
+                }
                 break
             case .failure(let error):
                 print(error.localizedDescription)
@@ -83,6 +85,19 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
             }
         })
     }
+}
 
- }
+extension SearchViewController {
+    func presentDetailsVCFor(recipe: DetailedMeal){
+        detailedRecipe = recipe
+        self.performSegue(withIdentifier: Utils.SeguesIdentifiers.recipeDetailSegue.rawValue, sender: self)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == Utils.SeguesIdentifiers.recipeDetailSegue.rawValue){
+            guard let destinationVc = segue.destination as? RecipeDetailViewController else {return}
+            destinationVc.recipe = detailedRecipe
+        }
+    }
+}
 
