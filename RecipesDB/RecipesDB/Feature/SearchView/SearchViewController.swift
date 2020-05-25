@@ -31,12 +31,6 @@ extension SearchViewController: UISearchBarDelegate {
         guard let integredientToSearch = searchBar.text else {
             return
         }
-        if !(isSearchValidFor(text: integredientToSearch)) {
-            viewModel?.mealsList = []
-            self.collectionView.reloadData()
-            self.presentAlertController(withTitle: "Oops!", andMessage: "Search criteria cannot be empty")
-            return
-        } else {
             viewModel?.requestAvailableMealsForIngredient(ingredient: integredientToSearch, {[weak self] (result) in
                 guard let self = self else { return }
                 switch result {
@@ -52,11 +46,6 @@ extension SearchViewController: UISearchBarDelegate {
                 }
             })
         }
-    }
-    func isSearchValidFor(text: String) -> Bool{
-        let resultString = text.removeWhiteSpaces()
-        return (resultString != "")
-    }
 }
 
 extension SearchViewController: UICollectionViewDataSource, UICollectionViewDelegate {

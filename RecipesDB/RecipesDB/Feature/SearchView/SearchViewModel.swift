@@ -21,7 +21,11 @@ class SearchViewModel {
     }
 
     func requestAvailableMealsForIngredient(ingredient : String, _ completion: @escaping (Result<[Meal], Error>) -> Void) {
-
+        if(!isSearchValidFor(text: ingredient)){
+            mealsList = []
+            completion(.failure(RecipiesDBErrorMessages.emptySearchCriteria))
+            return
+        }
         dataManagerService.requestMeals(withMainIngredient: formattedString(text: ingredient)){ [weak self] (result) in
             guard let self = self else { return }
             switch result {
@@ -61,6 +65,11 @@ class SearchViewModel {
         var formattedString = text.trimmingCharacters(in: .whitespacesAndNewlines)
         formattedString = formattedString.replacingOccurrences(of: " ", with: "_")
         return formattedString
+    }
+
+    func isSearchValidFor(text: String) -> Bool{
+        let resultString = text.removeWhiteSpaces()
+        return (resultString != "")
     }
     
 }
