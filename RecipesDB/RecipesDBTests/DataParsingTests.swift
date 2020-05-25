@@ -23,11 +23,11 @@ class DataParsingTests: XCTestCase {
     }
 
     func testMealListParsing() throws {
-        let requestURL = "https://www.themealdb.com/api/json/v1/1/filter.php?i=shrimp"
+        let requestURL = "https://www.themealdb.com/api/json/v1/1/filter.php?i=beef"
         let expectation = self.expectation(description: "Parsing")
         AF.request(requestURL).responseJSON{ response in
             switch response.result {
-            case .success(let json):
+            case .success:
                 let decoder = JSONDecoder()
                 guard let data = response.data else {return}
                 do {
