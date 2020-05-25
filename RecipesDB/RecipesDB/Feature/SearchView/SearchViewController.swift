@@ -50,13 +50,13 @@ extension SearchViewController: UISearchBarDelegate {
 
 extension SearchViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let itemsCont = viewModel?.mealsList.count else {
+        guard let itemsCount = viewModel?.mealsList.count else {
             return 0
         }
-        if itemsCont > 20 {
+        if itemsCount > 20 {
             return 20
         } else {
-            return itemsCont
+            return itemsCount
         }
     }
 

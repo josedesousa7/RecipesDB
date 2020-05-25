@@ -127,6 +127,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5A21114A247BBBDF00B9A43D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		5A7D64D7247A885C00F1D093 /* ErrorMessages */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +231,7 @@
 		5AFC1B482477FC8200670151 /* RecipesDB */ = {
 			isa = PBXGroup;
 			children = (
+				5A21114A247BBBDF00B9A43D /* Extension */,
 				5AB5FCAD247ACF6800B09726 /* Common */,
 				5A7D64D7247A885C00F1D093 /* ErrorMessages */,
 				5ABDF385247826300077A391 /* Application */,

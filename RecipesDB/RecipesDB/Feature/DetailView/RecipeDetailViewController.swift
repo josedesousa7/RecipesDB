@@ -80,7 +80,7 @@ class RecipeDetailViewController: UIViewController {
         }
         
         if let recipe = recipe {
-            viewModel?.fetchImageFor(forDetailedRecipe: recipe, {(image) in
+            viewModel?.fetchImageFor(detailedRecipe: recipe, {(image) in
                 self.recipePhotoImageView.image = image
             })
         }

@@ -13,7 +13,7 @@ class RecipeDetailViewModel {
     
     var imageService = ImageDataManager.sharedInstance
     
-    func fetchImageFor(forDetailedRecipe recipe: DetailedMeal,_ completion: @escaping (_ image: UIImage) -> Void) {
+    func fetchImageFor(detailedRecipe recipe: DetailedMeal,_ completion: @escaping (_ image: UIImage) -> Void) {
         imageService.requestImage(forDetailedRecipe: recipe) { (image) in
             completion(image)
         }
