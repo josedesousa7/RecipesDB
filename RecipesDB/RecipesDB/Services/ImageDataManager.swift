@@ -14,23 +14,13 @@ class ImageDataManager {
 
     static let sharedInstance = ImageDataManager()
 
+    /**
+     Request an image for a given recipe
+     - Parameter forRecipe: The recipe to request an image for
+     - Parameter completion: Callback with the requested image as result or a default one in case of an error
+     */
     func requestImage(forRecipe recipe: Meal, completion: @escaping (_ image: UIImage) -> Void) {
         guard let defaultImage = UIImage(named: "defaultImage") else { return }
-            AF.request(recipe.strMealThumb).responseImage { response in
-                switch response.result {
-                case .success(let image):
-                    completion(image)
-                    break
-                case .failure(let error):
-                    print(error.localizedDescription)
-                    completion(defaultImage)
-                    break
-                }
-            }
-        }
-
-    func requestImage(forDetailedRecipe recipe: DetailedMeal, completion: @escaping (_ image: UIImage) -> Void) {
-    guard let defaultImage = UIImage(named: "defaultImage") else { return }
         AF.request(recipe.strMealThumb).responseImage { response in
             switch response.result {
             case .success(let image):
@@ -43,5 +33,26 @@ class ImageDataManager {
             }
         }
     }
+
+    /**
+     Request an image for a given recipe
+     - Parameter forDetailedRecipe: The detailed recipe to request an image for
+     - Parameter completion: Callback with the requested image as result or a default one in case of an error
+     */
+
+    func requestImage(forDetailedRecipe recipe: DetailedMeal, completion: @escaping (_ image: UIImage) -> Void) {
+        guard let defaultImage = UIImage(named: "defaultImage") else { return }
+        AF.request(recipe.strMealThumb).responseImage { response in
+            switch response.result {
+            case .success(let image):
+                completion(image)
+                break
+            case .failure(let error):
+                print(error.localizedDescription)
+                completion(defaultImage)
+                break
+            }
+        }
     }
+}
 

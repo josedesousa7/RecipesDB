@@ -10,10 +10,13 @@ import UIKit
 
 class RecipeDetailViewController: UIViewController {
     
+//MARK: Variables
 
     var recipe : DetailedMeal?
     var viewModel: RecipeDetailViewModel?
-    
+
+//MARK: UIElements
+
     @IBOutlet weak var recipePhotoImageView: UIImageView!
     @IBOutlet weak var recipeNameLabel: UILabel!
     @IBOutlet weak var tagsLabel: UILabel!
@@ -64,11 +67,7 @@ class RecipeDetailViewController: UIViewController {
     @IBOutlet weak var quantity20Label: UILabel!
     
     @IBOutlet weak var instrunctionsLabel: UILabel!
-
-
     @IBOutlet var recipeLabels: [UILabel]!
-    
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +93,12 @@ class RecipeDetailViewController: UIViewController {
             label.isHidden = label.text?.count == 0
         }
     }
-    
+
+    /**
+     Setups the detailView components.
+     - Parameter recipe: The recipe that will be shown
+     */
+
     func setupViewFor(recipe:DetailedMeal) {
         recipeNameLabel.text = recipe.strMeal
         recipeAreaLabel.text = recipe.strArea

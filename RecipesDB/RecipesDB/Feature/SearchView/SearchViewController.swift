@@ -9,9 +9,13 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+// MARK: Variables
+
     var viewModel: SearchViewModel?
     var detailedRecipe: DetailedMeal?
 
+// MARK: UIElements
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -24,6 +28,8 @@ class SearchViewController: UIViewController {
         self.searchBar.delegate = self
     }
 }
+
+// MARK: SearchBar Delegate
 
 extension SearchViewController: UISearchBarDelegate {
 
@@ -47,6 +53,8 @@ extension SearchViewController: UISearchBarDelegate {
             })
         }
 }
+
+// MARK: CollectionView DataSource and Delegate
 
 extension SearchViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -86,6 +94,8 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
         })
     }
 }
+
+// MARK: Navigation
 
 extension SearchViewController {
     func presentDetailsVCFor(recipe: DetailedMeal){

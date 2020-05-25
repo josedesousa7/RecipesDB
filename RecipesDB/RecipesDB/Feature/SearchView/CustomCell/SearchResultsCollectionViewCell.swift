@@ -17,14 +17,16 @@ class SearchResultsCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func prepareForReuse() {
         super.prepareForReuse()
         logoImageView.image = nil
     }
-
+    /**
+    Setups the collectionView cell
+    - Parameter recipe: The recipe for which the cell needs to be set up
+    */
     func configureCellFor(recipe: Meal?) {
         guard let recipe = recipe else {return}
         self.nameLabel.text = recipe.strMeal
@@ -32,6 +34,4 @@ class SearchResultsCollectionViewCell: UICollectionViewCell {
                self.logoImageView.image = image
            }
     }
-
-
 }
