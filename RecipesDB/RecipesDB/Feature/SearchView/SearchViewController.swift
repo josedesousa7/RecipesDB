@@ -31,20 +31,31 @@ extension SearchViewController: UISearchBarDelegate {
         guard let integredientToSearch = searchBar.text else {
             return
         }
-        viewModel?.requestAvailableMealsForIngredient(ingredient: integredientToSearch, {[weak self] (result) in
-            guard let self = self else { return }
-            switch result {
-            case .success:
-                self.collectionView.reloadData()
-                self.view.endEditing(true)
-                break
-            case .failure(let error):
-                self.collectionView.reloadData()
-                self.view.endEditing(true)
-                self.presentAlertController(withTitle: "Oops!", andMessage: error.localizedDescription)
-                break
-            }
-        })
+        if !(isSearchValidFor(text: integredientToSearch)) {
+            viewModel?.mealsList = []
+            self.collectionView.reloadData()
+            self.presentAlertController(withTitle: "Oops!", andMessage: "Search criteria cannot be empty")
+            return
+        } else {
+            viewModel?.requestAvailableMealsForIngredient(ingredient: integredientToSearch, {[weak self] (result) in
+                guard let self = self else { return }
+                switch result {
+                case .success:
+                    self.collectionView.reloadData()
+                    self.view.endEditing(true)
+                    break
+                case .failure(let error):
+                    self.collectionView.reloadData()
+                    self.view.endEditing(true)
+                    self.presentAlertController(withTitle: "Oops!", andMessage: error.localizedDescription)
+                    break
+                }
+            })
+        }
+    }
+    func isSearchValidFor(text: String) -> Bool{
+        let resultString = text.removeWhiteSpaces()
+        return (resultString != "")
     }
 }
 

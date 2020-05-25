@@ -21,6 +21,7 @@ class SearchViewModel {
     }
 
     func requestAvailableMealsForIngredient(ingredient : String, _ completion: @escaping (Result<[Meal], Error>) -> Void) {
+
         dataManagerService.requestMeals(withMainIngredient: formattedString(text: ingredient)){ [weak self] (result) in
             guard let self = self else { return }
             switch result {

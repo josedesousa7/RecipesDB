@@ -10,7 +10,7 @@ import Foundation
 
 extension String {
 
-    func removeWhiteSpace(text: String) -> String {
+    func removeWhiteSpaceFor(text: String) -> String {
         if(text.count < 2){
             var formattedString = text.trimmingCharacters(in: .whitespacesAndNewlines)
             formattedString = formattedString.replacingOccurrences(of: " ", with: "")
@@ -19,4 +19,10 @@ extension String {
             return text
         }
     }
+
+    func removeWhiteSpaces() -> String {
+          var trimmedString = self.trimmingCharacters(in: .whitespacesAndNewlines)
+          trimmedString = trimmedString.replacingOccurrences(of: " ", with: "")
+          return trimmedString
+      }
 }
