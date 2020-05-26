@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// Model to parse a request for a list of recipes by main ingredient
+
 struct MealsSearchResults : Codable {
     let meals : [Meal]?
 }

@@ -8,10 +8,16 @@
 
 import UIKit
 
+/// SearchResult CollectionViewCell
+
 class SearchResultsCollectionViewCell: UICollectionViewCell {
+
+    //MARK: UI Elements
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var logoImageView: UIImageView!
+    
+    //MARK: Variables
 
     var requestManager = ImageDataManager.sharedInstance
 
@@ -24,14 +30,14 @@ class SearchResultsCollectionViewCell: UICollectionViewCell {
         logoImageView.image = nil
     }
     /**
-    Setups the collectionView cell
-    - Parameter recipe: The recipe for which the cell needs to be set up
-    */
+     Setups the collectionView cell
+     - Parameter recipe: The recipe for which the cell needs to be set up
+     */
     func configureCellFor(recipe: Meal?) {
         guard let recipe = recipe else {return}
         self.nameLabel.text = recipe.strMeal
         requestManager.requestImage(forRecipe: recipe) { (image) in
-               self.logoImageView.image = image
-           }
+            self.logoImageView.image = image
+        }
     }
 }

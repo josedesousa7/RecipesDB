@@ -7,17 +7,21 @@
 
 import UIKit
 
+/// SearchViewController
+
 class SearchViewController: UIViewController {
 
-// MARK: Variables
+    // MARK: Variables
 
     var viewModel: SearchViewModel?
     var detailedRecipe: DetailedMeal?
 
-// MARK: UIElements
+    // MARK: UIElements
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
+
+    //MARK: Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,21 +41,21 @@ extension SearchViewController: UISearchBarDelegate {
         guard let integredientToSearch = searchBar.text else {
             return
         }
-            viewModel?.requestAvailableMealsForIngredient(ingredient: integredientToSearch, {[weak self] (result) in
-                guard let self = self else { return }
-                switch result {
-                case .success:
-                    self.collectionView.reloadData()
-                    self.view.endEditing(true)
-                    break
-                case .failure(let error):
-                    self.collectionView.reloadData()
-                    self.view.endEditing(true)
-                    self.presentAlertController(withTitle: "Oops!", andMessage: error.localizedDescription)
-                    break
-                }
-            })
-        }
+        viewModel?.requestAvailableMealsForIngredient(ingredient: integredientToSearch, {[weak self] (result) in
+            guard let self = self else { return }
+            switch result {
+            case .success:
+                self.collectionView.reloadData()
+                self.view.endEditing(true)
+                break
+            case .failure(let error):
+                self.collectionView.reloadData()
+                self.view.endEditing(true)
+                self.presentAlertController(withTitle: "Oops!", andMessage: error.localizedDescription)
+                break
+            }
+        })
+    }
 }
 
 // MARK: CollectionView DataSource and Delegate

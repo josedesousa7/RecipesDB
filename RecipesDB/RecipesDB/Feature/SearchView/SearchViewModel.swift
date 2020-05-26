@@ -10,6 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+/// ViewModel for searchView
 class SearchViewModel {
 
     let dataManagerService: DataManager

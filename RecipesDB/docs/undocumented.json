@@ -1,0 +1,1069 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/AppDelegate.swift",
+      "line": 11,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/AppDelegate.swift",
+      "line": 15,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/AppDelegate.swift",
+      "line": 22,
+      "symbol": "AppDelegate.application(_:configurationForConnecting:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/AppDelegate.swift",
+      "line": 28,
+      "symbol": "AppDelegate.application(_:didDiscardSceneSessions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/SceneDelegate.swift",
+      "line": 10,
+      "symbol": "SceneDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/SceneDelegate.swift",
+      "line": 12,
+      "symbol": "SceneDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/SceneDelegate.swift",
+      "line": 15,
+      "symbol": "SceneDelegate.scene(_:willConnectTo:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/SceneDelegate.swift",
+      "line": 22,
+      "symbol": "SceneDelegate.sceneDidDisconnect(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/SceneDelegate.swift",
+      "line": 29,
+      "symbol": "SceneDelegate.sceneDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/SceneDelegate.swift",
+      "line": 34,
+      "symbol": "SceneDelegate.sceneWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/SceneDelegate.swift",
+      "line": 39,
+      "symbol": "SceneDelegate.sceneWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Application/SceneDelegate.swift",
+      "line": 44,
+      "symbol": "SceneDelegate.sceneDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Common/Utils.swift",
+      "line": 15,
+      "symbol": "Utils.cellIdentifiers",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Common/Utils.swift",
+      "line": 16,
+      "symbol": "Utils.cellIdentifiers.searchResultCell",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Common/Utils.swift",
+      "line": 19,
+      "symbol": "Utils.SeguesIdentifiers",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Common/Utils.swift",
+      "line": 20,
+      "symbol": "Utils.SeguesIdentifiers.recipeDetailSegue",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/ErrorMessages/RecipiesDBErrorMessages.swift",
+      "line": 14,
+      "symbol": "RecipiesDBErrorMessages.emptySearchResponse",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/ErrorMessages/RecipiesDBErrorMessages.swift",
+      "line": 15,
+      "symbol": "RecipiesDBErrorMessages.emptySearchCriteria",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Extension/String + Formatts.swift",
+      "line": 13,
+      "symbol": "String.removeWhiteSpaceFor(text:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Extension/String + Formatts.swift",
+      "line": 23,
+      "symbol": "String.removeWhiteSpaces()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Extension/UIViewController + AlertController.swift",
+      "line": 14,
+      "symbol": "UIViewController.presentAlertController(withTitle:andMessage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 16,
+      "symbol": "RecipeDetailViewController.recipe",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 17,
+      "symbol": "RecipeDetailViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 21,
+      "symbol": "RecipeDetailViewController.recipePhotoImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 22,
+      "symbol": "RecipeDetailViewController.recipeNameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 23,
+      "symbol": "RecipeDetailViewController.tagsLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 24,
+      "symbol": "RecipeDetailViewController.recipeCategoryLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 25,
+      "symbol": "RecipeDetailViewController.recipeAreaLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 27,
+      "symbol": "RecipeDetailViewController.ingredient1Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 28,
+      "symbol": "RecipeDetailViewController.ingredient2Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 29,
+      "symbol": "RecipeDetailViewController.ingredient3Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 30,
+      "symbol": "RecipeDetailViewController.ingredient4Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 31,
+      "symbol": "RecipeDetailViewController.ingredient5Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 32,
+      "symbol": "RecipeDetailViewController.ingredient6Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 33,
+      "symbol": "RecipeDetailViewController.ingredient7Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 34,
+      "symbol": "RecipeDetailViewController.ingredient8Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 35,
+      "symbol": "RecipeDetailViewController.ingredient9Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 36,
+      "symbol": "RecipeDetailViewController.ingredient10Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 37,
+      "symbol": "RecipeDetailViewController.ingredient11Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 38,
+      "symbol": "RecipeDetailViewController.ingredient12Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 39,
+      "symbol": "RecipeDetailViewController.ingredient13Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 40,
+      "symbol": "RecipeDetailViewController.ingredient14Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 41,
+      "symbol": "RecipeDetailViewController.ingredient15Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 42,
+      "symbol": "RecipeDetailViewController.ingredient16Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 43,
+      "symbol": "RecipeDetailViewController.ingredient17Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 44,
+      "symbol": "RecipeDetailViewController.ingredient18Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 45,
+      "symbol": "RecipeDetailViewController.ingredient19Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 46,
+      "symbol": "RecipeDetailViewController.ingredient20Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 49,
+      "symbol": "RecipeDetailViewController.quantity1Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 50,
+      "symbol": "RecipeDetailViewController.quantity2Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 51,
+      "symbol": "RecipeDetailViewController.quantity3Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 52,
+      "symbol": "RecipeDetailViewController.quantity4Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 53,
+      "symbol": "RecipeDetailViewController.quantity5Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 54,
+      "symbol": "RecipeDetailViewController.quantity6Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 55,
+      "symbol": "RecipeDetailViewController.quantity7Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 56,
+      "symbol": "RecipeDetailViewController.quantity8Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 57,
+      "symbol": "RecipeDetailViewController.quantity9Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 58,
+      "symbol": "RecipeDetailViewController.quantity10Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 59,
+      "symbol": "RecipeDetailViewController.quantity11Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 60,
+      "symbol": "RecipeDetailViewController.quantity12Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 61,
+      "symbol": "RecipeDetailViewController.quantity13Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 62,
+      "symbol": "RecipeDetailViewController.quantity14Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 63,
+      "symbol": "RecipeDetailViewController.quantity15Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 64,
+      "symbol": "RecipeDetailViewController.quantity16Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 65,
+      "symbol": "RecipeDetailViewController.quantity17Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 66,
+      "symbol": "RecipeDetailViewController.quantity18Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 67,
+      "symbol": "RecipeDetailViewController.quantity19Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 68,
+      "symbol": "RecipeDetailViewController.quantity20Label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 70,
+      "symbol": "RecipeDetailViewController.instrunctionsLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 71,
+      "symbol": "RecipeDetailViewController.recipeLabels",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 73,
+      "symbol": "RecipeDetailViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewController.swift",
+      "line": 82,
+      "symbol": "RecipeDetailViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/DetailView/RecipeDetailViewModel.swift",
+      "line": 15,
+      "symbol": "RecipeDetailViewModel.imageService",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/CustomCell/SearchResultsCollectionViewCell.swift",
+      "line": 17,
+      "symbol": "SearchResultsCollectionViewCell.nameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/CustomCell/SearchResultsCollectionViewCell.swift",
+      "line": 18,
+      "symbol": "SearchResultsCollectionViewCell.logoImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/CustomCell/SearchResultsCollectionViewCell.swift",
+      "line": 22,
+      "symbol": "SearchResultsCollectionViewCell.requestManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/CustomCell/SearchResultsCollectionViewCell.swift",
+      "line": 24,
+      "symbol": "SearchResultsCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/CustomCell/SearchResultsCollectionViewCell.swift",
+      "line": 28,
+      "symbol": "SearchResultsCollectionViewCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 16,
+      "symbol": "SearchViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 17,
+      "symbol": "SearchViewController.detailedRecipe",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 21,
+      "symbol": "SearchViewController.searchBar",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 22,
+      "symbol": "SearchViewController.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 26,
+      "symbol": "SearchViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 40,
+      "symbol": "SearchViewController.searchBarSearchButtonClicked(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 64,
+      "symbol": "SearchViewController.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 75,
+      "symbol": "SearchViewController.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 84,
+      "symbol": "SearchViewController.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 105,
+      "symbol": "SearchViewController.presentDetailsVCFor(recipe:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewController.swift",
+      "line": 110,
+      "symbol": "SearchViewController.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewModel.swift",
+      "line": 16,
+      "symbol": "SearchViewModel.dataManagerService",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewModel.swift",
+      "line": 17,
+      "symbol": "SearchViewModel.mealsList",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewModel.swift",
+      "line": 18,
+      "symbol": "SearchViewModel.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Feature/SearchView/SearchViewModel.swift",
+      "line": 20,
+      "symbol": "SearchViewModel.init(service:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/DataManager.swift",
+      "line": 14,
+      "symbol": "DataManagerProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/DataManager.swift",
+      "line": 15,
+      "symbol": "DataManagerProtocol.requestMeals(withMainIngredient:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/DataManager.swift",
+      "line": 16,
+      "symbol": "DataManagerProtocol.requestDetail(forMeal:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/DataManager.swift",
+      "line": 25,
+      "symbol": "DataManager.apiKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/DataManager.swift",
+      "line": 26,
+      "symbol": "DataManager.mealsList",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/DataManager.swift",
+      "line": 27,
+      "symbol": "DataManager.detailedMeal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/ImageDataManager.swift",
+      "line": 19,
+      "symbol": "ImageDataManager.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 14,
+      "symbol": "DetailedMeal.strMeal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 15,
+      "symbol": "DetailedMeal.strCategory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 16,
+      "symbol": "DetailedMeal.strArea",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 17,
+      "symbol": "DetailedMeal.strInstructions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 18,
+      "symbol": "DetailedMeal.strMealThumb",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 19,
+      "symbol": "DetailedMeal.strTags",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 20,
+      "symbol": "DetailedMeal.strYoutube",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 21,
+      "symbol": "DetailedMeal.strIngredient1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 22,
+      "symbol": "DetailedMeal.strIngredient2",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 23,
+      "symbol": "DetailedMeal.strIngredient3",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 24,
+      "symbol": "DetailedMeal.strIngredient4",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 25,
+      "symbol": "DetailedMeal.strIngredient5",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 26,
+      "symbol": "DetailedMeal.strIngredient6",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 27,
+      "symbol": "DetailedMeal.strIngredient7",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 28,
+      "symbol": "DetailedMeal.strIngredient8",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 29,
+      "symbol": "DetailedMeal.strIngredient9",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 30,
+      "symbol": "DetailedMeal.strIngredient10",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 31,
+      "symbol": "DetailedMeal.strIngredient11",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 32,
+      "symbol": "DetailedMeal.strIngredient12",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 33,
+      "symbol": "DetailedMeal.strIngredient13",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 34,
+      "symbol": "DetailedMeal.strIngredient14",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 35,
+      "symbol": "DetailedMeal.strIngredient15",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 36,
+      "symbol": "DetailedMeal.strIngredient16",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 37,
+      "symbol": "DetailedMeal.strIngredient17",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 38,
+      "symbol": "DetailedMeal.strIngredient18",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 39,
+      "symbol": "DetailedMeal.strIngredient19",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 40,
+      "symbol": "DetailedMeal.strIngredient20",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 41,
+      "symbol": "DetailedMeal.strMeasure1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 42,
+      "symbol": "DetailedMeal.strMeasure2",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 43,
+      "symbol": "DetailedMeal.strMeasure3",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 44,
+      "symbol": "DetailedMeal.strMeasure4",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 45,
+      "symbol": "DetailedMeal.strMeasure5",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 46,
+      "symbol": "DetailedMeal.strMeasure6",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 47,
+      "symbol": "DetailedMeal.strMeasure7",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 48,
+      "symbol": "DetailedMeal.strMeasure8",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 49,
+      "symbol": "DetailedMeal.strMeasure9",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 50,
+      "symbol": "DetailedMeal.strMeasure10",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 51,
+      "symbol": "DetailedMeal.strMeasure11",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 52,
+      "symbol": "DetailedMeal.strMeasure12",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 53,
+      "symbol": "DetailedMeal.strMeasure13",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 54,
+      "symbol": "DetailedMeal.strMeasure14",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 55,
+      "symbol": "DetailedMeal.strMeasure15",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 56,
+      "symbol": "DetailedMeal.strMeasure16",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 57,
+      "symbol": "DetailedMeal.strMeasure17",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 58,
+      "symbol": "DetailedMeal.strMeasure18",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 59,
+      "symbol": "DetailedMeal.strMeasure19",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMeal.swift",
+      "line": 60,
+      "symbol": "DetailedMeal.strMeasure20",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/DetailedMealResult.swift",
+      "line": 14,
+      "symbol": "DetailedMealResult.meals",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/Meal.swift",
+      "line": 14,
+      "symbol": "Meal.strMeal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/Meal.swift",
+      "line": 15,
+      "symbol": "Meal.strMealThumb",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/Meal.swift",
+      "line": 16,
+      "symbol": "Meal.idMeal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB/RecipesDB/Services/Model/MealsSearchResults.swift",
+      "line": 14,
+      "symbol": "MealsSearchResults.meals",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/josemarques/Documents/Bosch/RecipesDB/RecipesDB"
+}

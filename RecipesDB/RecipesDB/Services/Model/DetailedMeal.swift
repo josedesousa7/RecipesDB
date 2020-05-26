@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// Model to parse the detailed meal response from the API
+
 struct DetailedMeal: Codable {
     let strMeal: String
     let strCategory: String

@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// Model to parse a request for a detailed recipe
+
 struct DetailedMealResult : Codable {
     var meals : [DetailedMeal]
 }

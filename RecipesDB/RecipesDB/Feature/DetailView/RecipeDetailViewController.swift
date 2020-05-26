@@ -8,6 +8,7 @@
 
 import UIKit
 
+///Detail ViewController
 class RecipeDetailViewController: UIViewController {
     
 //MARK: Variables
@@ -77,6 +78,7 @@ class RecipeDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //MARK: Life Cycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let recipe = recipe {
@@ -94,6 +96,7 @@ class RecipeDetailViewController: UIViewController {
         }
     }
 
+    //MARK: Implementation
     /**
      Setups the detailView components.
      - Parameter recipe: The recipe that will be shown

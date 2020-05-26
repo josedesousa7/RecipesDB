@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// Utils file
+
 struct Utils {
 
     enum cellIdentifiers: String {

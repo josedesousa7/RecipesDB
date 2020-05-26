@@ -10,10 +10,16 @@ import Foundation
 import Alamofire
 import AlamofireImage
 
+/// Manages requests for images to the API
+
 class ImageDataManager {
+
+    //MARK: Variables
 
     static let sharedInstance = ImageDataManager()
 
+    //MARK: Network Requests
+    
     /**
      Request an image for a given recipe
      - Parameter forRecipe: The recipe to request an image for

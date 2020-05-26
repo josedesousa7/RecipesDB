@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// Custom error messages
+
 enum RecipiesDBErrorMessages: Error {
     case emptySearchResponse
     case emptySearchCriteria

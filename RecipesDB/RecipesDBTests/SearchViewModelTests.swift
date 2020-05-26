@@ -9,8 +9,10 @@
 import XCTest
 @testable import RecipesDB
 
-class SearchViewModelTests: XCTestCase {
+///SearchViewModel Tests
 
+class SearchViewModelTests: XCTestCase {
+    //MARK: Variables
     var viewModel: SearchViewModel?
     var recipesList = [Meal]()
     var recipe: Meal?
@@ -28,6 +30,10 @@ class SearchViewModelTests: XCTestCase {
     override func tearDownWithError() throws {
         viewModel = nil
     }
+
+    //MARK: Testing methods
+    
+    ///Test for retrieving a list of recipes with sucess
 
     func testViewModelRetrieveAllMeals() {
         let expectation = self.expectation(description: "Retrieving")
@@ -49,6 +55,8 @@ class SearchViewModelTests: XCTestCase {
         waitForExpectations(timeout: 20, handler: nil)
         XCTAssert(recipesList.count > 0)
     }
+
+    ///Test for retrieving a detailed recipe
 
     func testViewModelRetrieveMeal() throws {
         let expectation = self.expectation(description: "Retrieving")
@@ -72,21 +80,23 @@ class SearchViewModelTests: XCTestCase {
         XCTAssertEqual(retrievedRecipe.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
     }
 
+    ///Test for failing to retrieve a list of recipes
+
     func testViewModelRetrieveRecipesListFails(){
         let expectation = self.expectation(description: "Retrieving")
         var errorMessage = String()
         var retrievedAvailableRecipesList = [Meal]()
         viewModel?.requestAvailableMealsForIngredient(ingredient: "wrong_Ingredient", {(result) in
-        switch result {
-        case .success(let data):
-            retrievedAvailableRecipesList = data
-            expectation.fulfill()
-            break
-        case .failure(let error):
-            errorMessage = error.localizedDescription
-            expectation.fulfill()
-            break
-                 }
+            switch result {
+            case .success(let data):
+                retrievedAvailableRecipesList = data
+                expectation.fulfill()
+                break
+            case .failure(let error):
+                errorMessage = error.localizedDescription
+                expectation.fulfill()
+                break
+            }
         })
         waitForExpectations(timeout: 20, handler: nil)
         XCTAssert(retrievedAvailableRecipesList.count == 0)
@@ -94,6 +104,8 @@ class SearchViewModelTests: XCTestCase {
         XCTAssertNotEqual(retrievedAvailableRecipesList.first?.strMeal, "Beef and Mustard Pie")
         XCTAssertNotEqual(retrievedAvailableRecipesList.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
     }
+
+    ///Test for failing to retrieve a list of recipes with empty search criteria
 
     func testViewModelRetrieveRecipesListWithEmptyTitleFails(){
         let expectation = self.expectation(description: "Retrieving")
@@ -118,6 +130,8 @@ class SearchViewModelTests: XCTestCase {
         XCTAssertNotEqual(retrievedAvailableRecipesList.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
     }
 
+    ///Test for failing to retrieve a list of detailed recipes
+
     func testViewModelRetrieveRecipeFails() throws {
         var errorMessage = String()
         var retrievedRecipe = [DetailedMeal]()
@@ -140,6 +154,8 @@ class SearchViewModelTests: XCTestCase {
         XCTAssertNotEqual(retrievedRecipe.first?.strMeal, "Beef and Mustard Pie")
         XCTAssertNotEqual(retrievedRecipe.first?.strMealThumb, "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg")
     }
+
+    ///Test to format a string correctly before submitting the request
 
     func testStringFormat () {
         let testString = "Chicken Breast"

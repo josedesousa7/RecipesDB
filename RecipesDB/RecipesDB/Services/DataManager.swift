@@ -16,8 +16,12 @@ protocol DataManagerProtocol {
     func requestDetail(forMeal meal: Meal, _ completion: @escaping (Result<Bool, Error>) -> Void)
 }
 
+/// Manages requests for data to the API
 
 class DataManager:DataManagerProtocol {
+
+    //MARK: Variables
+
     let apiKey = "1"
     let mealsList: BehaviorRelay <[Meal]> = BehaviorRelay(value:[])
     let detailedMeal: BehaviorRelay <[DetailedMeal]> = BehaviorRelay(value: [])
